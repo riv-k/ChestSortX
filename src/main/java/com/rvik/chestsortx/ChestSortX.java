@@ -23,8 +23,7 @@ import net.kyori.adventure.text.Component;
 public class ChestSortX extends JavaPlugin implements Listener {
 
   private static final List<String> CATEGORY_ORDER = Arrays.asList(
-      "FOOD", "TOOLS", "COMBAT", "REDSTONE", "BUILDING_BLOCKS",
-      "BREWING", "DECORATIONS", "TRANSPORTATION", "MISC");
+      "FOOD", "TOOLS", "COMBAT", "BUILDING_BLOCKS", "DECORATIONS", "REDSTONE", "BREWING", "TRANSPORTATION",  "MISC");
 
   @Override
   public void onEnable() {
