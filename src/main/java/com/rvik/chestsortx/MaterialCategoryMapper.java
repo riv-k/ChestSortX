@@ -6,14 +6,64 @@ import java.util.Map;
 public class MaterialCategoryMapper {
 
     public enum CreativeCategory {
+        /**
+         * All items related to brewing and potions including all types of potions,
+         * their variants,
+         * and ingredients to brew them.
+         */
         BREWING,
+
+        /**
+         * An assortment of building blocks including dirt, bricks, planks, ores, slabs,
+         * etc.
+         */
         BUILDING_BLOCKS,
+
+        /**
+         * Equipment items meant for combat including armor, swords, bows, tipped
+         * arrows,
+         * and useful enchantment books for said equipment.
+         */
         COMBAT,
+
+        /**
+         * Blocks and items typically used for decorative purposes including candles,
+         * saplings,
+         * flora, fauna, fences, walls, carpets, etc.
+         */
         DECORATIONS,
+
+        /**
+         * Food items consumable by the player including meats, berries, edible drops
+         * from creatures, etc.
+         */
         FOOD,
+
+        /**
+         * Miscellaneous items and blocks that do not fit into other categories
+         * including gems,
+         * dyes, spawn eggs, discs, banner patterns, etc.
+         */
         MISC,
+
+        /**
+         * Blocks used and associated with redstone contraptions including buttons,
+         * levers,
+         * pressure plates, redstone components, pistons, etc.
+         */
         REDSTONE,
+
+        /**
+         * Equipment items meant for general utility including pickaxes, axes, hoes,
+         * flint and steel,
+         * and useful enchantment books for said tools.
+         */
         TOOLS,
+
+        /**
+         * Items pertaining to transportation including minecarts, rails, boats, elytra,
+         * etc.
+         */
         TRANSPORTATION
     }
 
@@ -65,7 +115,7 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("SPLASH_POTION", CreativeCategory.BREWING);
         CATEGORY_MAP.put("WATER_BUCKET", CreativeCategory.BREWING);
         CATEGORY_MAP.put("WATER_CAULDRON", CreativeCategory.BREWING);
-
+        CATEGORY_MAP.put("SUSPICIOUS_STEW", CreativeCategory.BREWING);
     }
 
     private static void registerBuildingBlocks() {
@@ -75,22 +125,16 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("ACACIA_SLAB", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("ACACIA_STAIRS", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("ACACIA_TRAPDOOR", CreativeCategory.BUILDING_BLOCKS);
-
-        // Leaves & Saplings
         CATEGORY_MAP.put("ACACIA_LEAVES", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("ACACIA_SAPLING", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("AZALEA", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("AZALEA_LEAVES", CreativeCategory.BUILDING_BLOCKS);
-
-        // Stone & Ore blocks
         CATEGORY_MAP.put("ANDESITE", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("ANDESITE_SLAB", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("ANDESITE_STAIRS", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("ANDESITE_WALL", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("ANCIENT_DEBRIS", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("AMETHYST_BLOCK", CreativeCategory.BUILDING_BLOCKS);
-
-        // Bamboo & related wood blocks
         CATEGORY_MAP.put("BAMBOO_BLOCK", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("BAMBOO_PLANKS", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("BAMBOO_MOSAIC", CreativeCategory.BUILDING_BLOCKS);
@@ -99,23 +143,17 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("BAMBOO_SLAB", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("BAMBOO_STAIRS", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("BAMBOO_TRAPDOOR", CreativeCategory.BUILDING_BLOCKS);
-
-        // Stone & Ore
         CATEGORY_MAP.put("BASALT", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("BEDROCK", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("BLACKSTONE", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("BLACKSTONE_SLAB", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("BLACKSTONE_STAIRS", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("BLACKSTONE_WALL", CreativeCategory.BUILDING_BLOCKS);
-
-        // Brick
         CATEGORY_MAP.put("BRICK", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("BRICK_SLAB", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("BRICK_STAIRS", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("BRICK_WALL", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("BRICKS", CreativeCategory.BUILDING_BLOCKS);
-
-        // Bamboo leaves & saplings
         CATEGORY_MAP.put("BAMBOO_SAPLING", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("CACTUS", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("CALCITE", CreativeCategory.BUILDING_BLOCKS);
@@ -398,7 +436,10 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("WEATHERED_CHISELED_COPPER", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("WEATHERED_COPPER", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("WEATHERED_CUT_COPPER", CreativeCategory.BUILDING_BLOCKS);
-
+        CATEGORY_MAP.put("RED_MUSHROOM_BLOCK", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("NETHER_WART_BLOCK", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("NETHER_QUARTZ_ORE", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("NETHER_GOLD_ORE", CreativeCategory.BUILDING_BLOCKS);
     }
 
     private static void registerCombat() {
@@ -421,7 +462,6 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("DIAMOND_PICKAXE", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("DIAMOND_SHOVEL", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("DIAMOND_SWORD", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("DIAMOND_SWORD", CreativeCategory.COMBAT); // included if needed, just a reminder
         CATEGORY_MAP.put("GOLDEN_SWORD", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("GOLDEN_AXE", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("GOLDEN_PICKAXE", CreativeCategory.COMBAT);
@@ -449,19 +489,11 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("LEATHER_HORSE_ARMOR", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("LEATHER_LEGGINGS", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("MACE", CreativeCategory.COMBAT);
-        // eh?
-        CATEGORY_MAP.put("NETHERITE_AXE", CreativeCategory.TOOLS);
-        CATEGORY_MAP.put("NETHERITE_HOE", CreativeCategory.TOOLS);
-        CATEGORY_MAP.put("NETHERITE_PICKAXE", CreativeCategory.TOOLS);
-        CATEGORY_MAP.put("NETHERITE_SHOVEL", CreativeCategory.TOOLS);
         CATEGORY_MAP.put("NETHERITE_SWORD", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("NETHERITE_BOOTS", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("NETHERITE_CHESTPLATE", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("NETHERITE_HELMET", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("NETHERITE_LEGGINGS", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("NETHERITE_INGOT", CreativeCategory.MISC);
-        CATEGORY_MAP.put("NETHERITE_SCRAP", CreativeCategory.MISC);
-        CATEGORY_MAP.put("NETHERITE_UPGRADE_SMITHING_TEMPLATE", CreativeCategory.MISC);
         CATEGORY_MAP.put("TOTEM_OF_UNDYING", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("TRIDENT", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("TURTLE_HELMET", CreativeCategory.COMBAT);
@@ -471,7 +503,9 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("WOODEN_SHOVEL", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("WOODEN_SWORD", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("WITHER_SKELETON_SKULL", CreativeCategory.COMBAT);
-
+        CATEGORY_MAP.put("SPECTRAL_ARROW", CreativeCategory.COMBAT);
+        CATEGORY_MAP.put("STONE_SWORD", CreativeCategory.COMBAT);
+        CATEGORY_MAP.put("SHIELD", CreativeCategory.COMBAT);
     }
 
     private static void registerDecorations() {
@@ -485,7 +519,6 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("ACACIA_SHELF", CreativeCategory.DECORATIONS);
         CATEGORY_MAP.put("ARMOR_STAND", CreativeCategory.DECORATIONS);
         CATEGORY_MAP.put("AZURE_BLUET", CreativeCategory.DECORATIONS);
-        // Bamboo decorations & hanging signs
         CATEGORY_MAP.put("BAMBOO_FENCE", CreativeCategory.DECORATIONS);
         CATEGORY_MAP.put("BAMBOO_FENCE_GATE", CreativeCategory.DECORATIONS);
         CATEGORY_MAP.put("BAMBOO_SIGN", CreativeCategory.DECORATIONS);
@@ -493,7 +526,6 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("BAMBOO_WALL_SIGN", CreativeCategory.DECORATIONS);
         CATEGORY_MAP.put("BAMBOO_WALL_HANGING_SIGN", CreativeCategory.DECORATIONS);
         CATEGORY_MAP.put("BAMBOO_SHELF", CreativeCategory.DECORATIONS);
-
         CATEGORY_MAP.put("BELL", CreativeCategory.DECORATIONS);
         CATEGORY_MAP.put("BLACK_BANNER", CreativeCategory.DECORATIONS);
         CATEGORY_MAP.put("BLACK_WALL_BANNER", CreativeCategory.DECORATIONS);
@@ -676,11 +708,9 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("RED_CARPET", CreativeCategory.DECORATIONS);
         CATEGORY_MAP.put("RED_CONCRETE", CreativeCategory.DECORATIONS);
         CATEGORY_MAP.put("RED_CONCRETE_POWDER", CreativeCategory.DECORATIONS);
-        CATEGORY_MAP.put("RED_DYE", CreativeCategory.MISC);
         CATEGORY_MAP.put("RED_GLAZED_TERRACOTTA", CreativeCategory.DECORATIONS);
         CATEGORY_MAP.put("RED_HARNESS", CreativeCategory.DECORATIONS);
         CATEGORY_MAP.put("RED_MUSHROOM", CreativeCategory.DECORATIONS);
-        CATEGORY_MAP.put("RED_MUSHROOM_BLOCK", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("RED_SHULKER_BOX", CreativeCategory.DECORATIONS);
         CATEGORY_MAP.put("RED_STAINED_GLASS", CreativeCategory.DECORATIONS);
         CATEGORY_MAP.put("RED_STAINED_GLASS_PANE", CreativeCategory.DECORATIONS);
@@ -720,7 +750,8 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("WEEPING_VINES_PLANT", CreativeCategory.DECORATIONS);
         CATEGORY_MAP.put("WILDFLOWERS", CreativeCategory.DECORATIONS);
         CATEGORY_MAP.put("WITHER_ROSE", CreativeCategory.DECORATIONS);
-
+        CATEGORY_MAP.put("SWEET_BERRY_BUSH", CreativeCategory.DECORATIONS);
+        CATEGORY_MAP.put("NETHER_SPROUTS", CreativeCategory.DECORATIONS);
     }
 
     private static void registerFood() {
@@ -741,7 +772,7 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("GOLDEN_APPLE", CreativeCategory.FOOD);
         CATEGORY_MAP.put("GOLDEN_CARROT", CreativeCategory.FOOD);
         CATEGORY_MAP.put("GLOW_BERRIES", CreativeCategory.FOOD);
-        CATEGORY_MAP.put("INK_SAC", CreativeCategory.FOOD); // if used as dye, could also be MISC
+        CATEGORY_MAP.put("INK_SAC", CreativeCategory.FOOD);
         CATEGORY_MAP.put("MELON", CreativeCategory.FOOD);
         CATEGORY_MAP.put("MELON_SEEDS", CreativeCategory.FOOD);
         CATEGORY_MAP.put("MELON_SLICE", CreativeCategory.FOOD);
@@ -757,19 +788,20 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("RABBIT", CreativeCategory.FOOD);
         CATEGORY_MAP.put("RABBIT_STEW", CreativeCategory.FOOD);
         CATEGORY_MAP.put("RABBIT_FOOT", CreativeCategory.FOOD);
-        CATEGORY_MAP.put("RABBIT_HIDE", CreativeCategory.MISC);
         CATEGORY_MAP.put("ROTTEN_FLESH", CreativeCategory.FOOD);
         CATEGORY_MAP.put("SALMON", CreativeCategory.FOOD);
         CATEGORY_MAP.put("SALMON_BUCKET", CreativeCategory.FOOD);
         CATEGORY_MAP.put("SUGAR", CreativeCategory.FOOD);
         CATEGORY_MAP.put("SUGAR_CANE", CreativeCategory.FOOD);
         CATEGORY_MAP.put("SWEET_BERRIES", CreativeCategory.FOOD);
-        CATEGORY_MAP.put("SWEET_BERRY_BUSH", CreativeCategory.DECORATIONS);
         CATEGORY_MAP.put("TADPOLE_BUCKET", CreativeCategory.FOOD);
         CATEGORY_MAP.put("TROPICAL_FISH_BUCKET", CreativeCategory.FOOD);
         CATEGORY_MAP.put("WHEAT", CreativeCategory.FOOD);
         CATEGORY_MAP.put("WHEAT_SEEDS", CreativeCategory.FOOD);
-
+        CATEGORY_MAP.put("PUFFERFISH", CreativeCategory.FOOD);
+        CATEGORY_MAP.put("PUFFERFISH_BUCKET", CreativeCategory.FOOD);
+        CATEGORY_MAP.put("SPIDER_EYE", CreativeCategory.FOOD);
+        CATEGORY_MAP.put("SUGAR", CreativeCategory.FOOD);
     }
 
     private static void registerMisc() {
@@ -852,7 +884,6 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("DRAGON_WALL_HEAD", CreativeCategory.MISC);
         CATEGORY_MAP.put("DRIED_GHAST", CreativeCategory.MISC);
         CATEGORY_MAP.put("DUNE_ARMOR_TRIM_SMITHING_TEMPLATE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("ECHO_SHARD", CreativeCategory.MISC);
         CATEGORY_MAP.put("EMERALD", CreativeCategory.MISC);
         CATEGORY_MAP.put("ENCHANTED_BOOK", CreativeCategory.MISC);
         CATEGORY_MAP.put("ENCHANTED_GOLDEN_APPLE", CreativeCategory.MISC);
@@ -876,7 +907,6 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("EXPOSED_LIGHTNING_ROD", CreativeCategory.MISC);
         CATEGORY_MAP.put("EYE_ARMOR_TRIM_SMITHING_TEMPLATE", CreativeCategory.MISC);
         CATEGORY_MAP.put("FIELD_MASONED_BANNER_PATTERN", CreativeCategory.MISC);
-        CATEGORY_MAP.put("FILLED_MAP", CreativeCategory.MISC);
         CATEGORY_MAP.put("FLETCHING_TABLE", CreativeCategory.MISC);
         CATEGORY_MAP.put("FLOW_ARMOR_TRIM_SMITHING_TEMPLATE", CreativeCategory.MISC);
         CATEGORY_MAP.put("FLOW_BANNER_PATTERN", CreativeCategory.MISC);
@@ -886,11 +916,11 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("GLOW_INK_SAC", CreativeCategory.MISC);
         CATEGORY_MAP.put("GLOW_ITEM_FRAME", CreativeCategory.MISC);
         CATEGORY_MAP.put("GLOW_LICHEN", CreativeCategory.MISC);
-        CATEGORY_MAP.put("ECHO_SHARD", CreativeCategory.MISC); // if included from previous
+        CATEGORY_MAP.put("ECHO_SHARD", CreativeCategory.MISC);
         CATEGORY_MAP.put("EMERALD", CreativeCategory.MISC);
         CATEGORY_MAP.put("DIAMOND", CreativeCategory.MISC);
         CATEGORY_MAP.put("GOAT_HORN", CreativeCategory.MISC);
-        CATEGORY_MAP.put("FILLED_MAP", CreativeCategory.MISC); // if included earlier
+        CATEGORY_MAP.put("FILLED_MAP", CreativeCategory.MISC);
         CATEGORY_MAP.put("GUSTER_BANNER_PATTERN", CreativeCategory.MISC);
         CATEGORY_MAP.put("GUSTER_POTTERY_SHERD", CreativeCategory.MISC);
         CATEGORY_MAP.put("HEART_OF_THE_SEA", CreativeCategory.MISC);
@@ -938,10 +968,6 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("NAUTILUS_SHELL", CreativeCategory.MISC);
         CATEGORY_MAP.put("NETHER_PORTAL", CreativeCategory.MISC);
         CATEGORY_MAP.put("NETHER_STAR", CreativeCategory.MISC);
-        CATEGORY_MAP.put("NETHER_WART_BLOCK", CreativeCategory.BUILDING_BLOCKS);
-        CATEGORY_MAP.put("NETHER_QUARTZ_ORE", CreativeCategory.BUILDING_BLOCKS);
-        CATEGORY_MAP.put("NETHER_GOLD_ORE", CreativeCategory.BUILDING_BLOCKS);
-        CATEGORY_MAP.put("NETHER_SPROUTS", CreativeCategory.DECORATIONS);
         CATEGORY_MAP.put("OCELOT_SPAWN_EGG", CreativeCategory.MISC);
         CATEGORY_MAP.put("PANDA_SPAWN_EGG", CreativeCategory.MISC);
         CATEGORY_MAP.put("PARROT_SPAWN_EGG", CreativeCategory.MISC);
@@ -958,8 +984,6 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("PLAYER_WALL_HEAD", CreativeCategory.MISC);
         CATEGORY_MAP.put("PLENTY_POTTERY_SHERD", CreativeCategory.MISC);
         CATEGORY_MAP.put("PRIZE_POTTERY_SHERD", CreativeCategory.MISC);
-        CATEGORY_MAP.put("PUFFERFISH", CreativeCategory.FOOD);
-        CATEGORY_MAP.put("PUFFERFISH_BUCKET", CreativeCategory.FOOD);
         CATEGORY_MAP.put("PUFFERFISH_SPAWN_EGG", CreativeCategory.MISC);
         CATEGORY_MAP.put("RABBIT_HIDE", CreativeCategory.MISC);
         CATEGORY_MAP.put("RABBIT_SPAWN_EGG", CreativeCategory.MISC);
@@ -983,15 +1007,11 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("SNIFFER_SPAWN_EGG", CreativeCategory.MISC);
         CATEGORY_MAP.put("SNORT_ARMOR_TRIM_SMITHING_TEMPLATE", CreativeCategory.MISC);
         CATEGORY_MAP.put("SPAWNER", CreativeCategory.MISC);
-        CATEGORY_MAP.put("SPECTRAL_ARROW", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("SPIDER_EYE", CreativeCategory.FOOD);
         CATEGORY_MAP.put("SPIDER_SPAWN_EGG", CreativeCategory.MISC);
         CATEGORY_MAP.put("SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE", CreativeCategory.MISC);
         CATEGORY_MAP.put("STRING", CreativeCategory.MISC);
-        CATEGORY_MAP.put("SUGAR", CreativeCategory.FOOD);
         CATEGORY_MAP.put("SUSPICIOUS_GRAVEL", CreativeCategory.MISC);
         CATEGORY_MAP.put("SUSPICIOUS_SAND", CreativeCategory.MISC);
-        CATEGORY_MAP.put("SUSPICIOUS_STEW", CreativeCategory.BREWING);
         CATEGORY_MAP.put("TADPOLE_SPAWN_EGG", CreativeCategory.MISC);
         CATEGORY_MAP.put("TIPPED_ARROW", CreativeCategory.MISC);
         CATEGORY_MAP.put("TRADER_LLAMA_SPAWN_EGG", CreativeCategory.MISC);
@@ -1067,7 +1087,11 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("ZOMBIFIED_PIGLIN_SPAWN_EGG", CreativeCategory.MISC);
         CATEGORY_MAP.put("WRITABLE_BOOK", CreativeCategory.MISC);
         CATEGORY_MAP.put("WRITTEN_BOOK", CreativeCategory.MISC);
-
+        CATEGORY_MAP.put("NETHERITE_INGOT", CreativeCategory.MISC);
+        CATEGORY_MAP.put("NETHERITE_SCRAP", CreativeCategory.MISC);
+        CATEGORY_MAP.put("NETHERITE_UPGRADE_SMITHING_TEMPLATE", CreativeCategory.MISC);
+        CATEGORY_MAP.put("RED_DYE", CreativeCategory.MISC);
+        CATEGORY_MAP.put("RABBIT_HIDE", CreativeCategory.MISC);
     }
 
     private static void registerRedstone() {
@@ -1121,7 +1145,7 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("TRIPWIRE", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("TRIPWIRE_HOOK", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("TRAPPED_CHEST", CreativeCategory.REDSTONE);
-
+        CATEGORY_MAP.put("OAK_BUTTON", CreativeCategory.REDSTONE);
     }
 
     private static void registerTools() {
@@ -1151,14 +1175,15 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("STONE_HOE", CreativeCategory.TOOLS);
         CATEGORY_MAP.put("STONE_PICKAXE", CreativeCategory.TOOLS);
         CATEGORY_MAP.put("STONE_SHOVEL", CreativeCategory.TOOLS);
-        CATEGORY_MAP.put("STONE_SWORD", CreativeCategory.COMBAT); // weapon
-        CATEGORY_MAP.put("SHIELD", CreativeCategory.COMBAT); // defensive tool
         CATEGORY_MAP.put("STONECUTTER", CreativeCategory.TOOLS);
         CATEGORY_MAP.put("RECOVERY_COMPASS", CreativeCategory.TOOLS);
         CATEGORY_MAP.put("SPYGLASS", CreativeCategory.TOOLS);
         CATEGORY_MAP.put("TEST_BLOCK", CreativeCategory.TOOLS);
         CATEGORY_MAP.put("TEST_INSTANCE_BLOCK", CreativeCategory.TOOLS);
-
+        CATEGORY_MAP.put("NETHERITE_AXE", CreativeCategory.TOOLS);
+        CATEGORY_MAP.put("NETHERITE_HOE", CreativeCategory.TOOLS);
+        CATEGORY_MAP.put("NETHERITE_PICKAXE", CreativeCategory.TOOLS);
+        CATEGORY_MAP.put("NETHERITE_SHOVEL", CreativeCategory.TOOLS);
     }
 
     private static void registerTransportation() {
@@ -1187,12 +1212,10 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("DARK_OAK_CHEST_BOAT", CreativeCategory.TRANSPORTATION);
         CATEGORY_MAP.put("OAK_BOAT", CreativeCategory.TRANSPORTATION);
         CATEGORY_MAP.put("OAK_CHEST_BOAT", CreativeCategory.TRANSPORTATION);
-        CATEGORY_MAP.put("OAK_BUTTON", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("PALE_OAK_BOAT", CreativeCategory.TRANSPORTATION);
         CATEGORY_MAP.put("PALE_OAK_CHEST_BOAT", CreativeCategory.TRANSPORTATION);
         CATEGORY_MAP.put("SPRUCE_BOAT", CreativeCategory.TRANSPORTATION);
         CATEGORY_MAP.put("SPRUCE_CHEST_BOAT", CreativeCategory.TRANSPORTATION);
-
     }
 
     // Updated to accept string keys
