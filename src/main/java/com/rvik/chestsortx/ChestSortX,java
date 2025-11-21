@@ -1,4 +1,4 @@
-package io.papermc.chestsortx;
+package com.rvik.chestsortx;
 
 import net.kyori.adventure.text.Component;
 import org.bukkit.Bukkit;

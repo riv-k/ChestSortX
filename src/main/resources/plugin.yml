@@ -1,6 +1,6 @@
 name: ChestSortX
 version: 1.0.0
-main: io.papermc.chestsortx.ChestSortX
+main: com.rvik.chestsortx.ChestSortX
 description: Cross-platform PaperMC plugin that auto-sorts chests for Java & Bedrock; mobile and desktop friendly.
 author: Rithvik
 website: https://papermc.io
