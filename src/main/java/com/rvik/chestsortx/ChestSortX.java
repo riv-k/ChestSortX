@@ -62,11 +62,14 @@ public class ChestSortX extends JavaPlugin implements Listener {
       }
       validItems.add(item);
     }
+
+
     for (ItemStack item : validItems) {
       Material mat = item.getType();
+      String matName = mat.toString().toUpperCase();
 
       // Look up the category in your mapper
-      CreativeCategory category = MaterialCategoryMapper.getCategory(mat);
+      CreativeCategory category = MaterialCategoryMapper.getCategory(matName);
 
       // Fallback if null
       String categoryName = category != null ? category.toString() : "MISC";
@@ -75,7 +78,7 @@ public class ChestSortX extends JavaPlugin implements Listener {
       categoryMap.getOrDefault(categoryName, categoryMap.get("MISC")).add(item);
 
       // Debug
-      event.getPlayer().sendMessage(Component.text(mat + " -> " + categoryName));
+      event.getPlayer().sendMessage(Component.text(matName + " -> " + categoryName));
     }
 
     // Clear the inventory before re-adding items
