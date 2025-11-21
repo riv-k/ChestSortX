@@ -447,72 +447,66 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("NETHER_WART_BLOCK", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("NETHER_QUARTZ_ORE", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("NETHER_GOLD_ORE", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("IRON_TRAPDOOR", CreativeCategory.BUILDING_BLOCKS);
+
     }
 
     private static void registerCombat() {
+        // Core combat items: weapons, armor, ammunition and trophies
         CATEGORY_MAP.put("ARROW", CreativeCategory.COMBAT);
+        CATEGORY_MAP.put("SPECTRAL_ARROW", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("BOW", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("BLAZE_SPAWN_EGG", CreativeCategory.COMBAT);
+        CATEGORY_MAP.put("CROSSBOW", CreativeCategory.COMBAT);
+
+        // Armor (combat equipment)
         CATEGORY_MAP.put("CHAINMAIL_BOOTS", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("CHAINMAIL_CHESTPLATE", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("CHAINMAIL_HELMET", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("CHAINMAIL_LEGGINGS", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("CARROT_ON_A_STICK", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("CROSSBOW", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("DIAMOND_AXE", CreativeCategory.COMBAT);
+        CATEGORY_MAP.put("LEATHER_BOOTS", CreativeCategory.COMBAT);
+        CATEGORY_MAP.put("LEATHER_CHESTPLATE", CreativeCategory.COMBAT);
+        CATEGORY_MAP.put("LEATHER_HELMET", CreativeCategory.COMBAT);
+        CATEGORY_MAP.put("LEATHER_LEGGINGS", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("DIAMOND_BOOTS", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("DIAMOND_CHESTPLATE", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("DIAMOND_HELMET", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("DIAMOND_HOE", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("DIAMOND_HORSE_ARMOR", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("DIAMOND_LEGGINGS", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("DIAMOND_PICKAXE", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("DIAMOND_SHOVEL", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("DIAMOND_SWORD", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("GOLDEN_SWORD", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("GOLDEN_AXE", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("GOLDEN_PICKAXE", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("GOLDEN_SHOVEL", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("GOLDEN_HOE", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("GOLDEN_BOOTS", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("GOLDEN_CHESTPLATE", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("GOLDEN_HELMET", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("GOLDEN_LEGGINGS", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("GOLDEN_HORSE_ARMOR", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("IRON_AXE", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("IRON_BOOTS", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("IRON_CHESTPLATE", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("IRON_HELMET", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("IRON_HOE", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("IRON_HORSE_ARMOR", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("IRON_LEGGINGS", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("IRON_PICKAXE", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("IRON_SHOVEL", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("IRON_SWORD", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("IRON_TRAPDOOR", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("LEATHER_BOOTS", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("LEATHER_CHESTPLATE", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("LEATHER_HELMET", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("LEATHER_HORSE_ARMOR", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("LEATHER_LEGGINGS", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("MACE", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("NETHERITE_SWORD", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("NETHERITE_BOOTS", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("NETHERITE_CHESTPLATE", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("NETHERITE_HELMET", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("NETHERITE_LEGGINGS", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("TOTEM_OF_UNDYING", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("TRIDENT", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("TURTLE_HELMET", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("WOODEN_AXE", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("WOODEN_HOE", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("WOODEN_PICKAXE", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("WOODEN_SHOVEL", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("WOODEN_SWORD", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("WITHER_SKELETON_SKULL", CreativeCategory.COMBAT);
-        CATEGORY_MAP.put("SPECTRAL_ARROW", CreativeCategory.COMBAT);
+
+        // Weapons and combat tools
+        CATEGORY_MAP.put("DIAMOND_SWORD", CreativeCategory.COMBAT);
+        CATEGORY_MAP.put("GOLDEN_SWORD", CreativeCategory.COMBAT);
+        CATEGORY_MAP.put("IRON_SWORD", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("STONE_SWORD", CreativeCategory.COMBAT);
+        CATEGORY_MAP.put("WOODEN_SWORD", CreativeCategory.COMBAT);
+        CATEGORY_MAP.put("NETHERITE_SWORD", CreativeCategory.COMBAT);
+        CATEGORY_MAP.put("TRIDENT", CreativeCategory.COMBAT);
+        CATEGORY_MAP.put("MACE", CreativeCategory.COMBAT);
+
+        // Horse armor kept as combat equipment
+        CATEGORY_MAP.put("DIAMOND_HORSE_ARMOR", CreativeCategory.COMBAT);
+        CATEGORY_MAP.put("GOLDEN_HORSE_ARMOR", CreativeCategory.COMBAT);
+        CATEGORY_MAP.put("IRON_HORSE_ARMOR", CreativeCategory.COMBAT);
+        CATEGORY_MAP.put("LEATHER_HORSE_ARMOR", CreativeCategory.COMBAT);
+
+        // Utility / trophies
+        CATEGORY_MAP.put("TOTEM_OF_UNDYING", CreativeCategory.COMBAT);
+        CATEGORY_MAP.put("WITHER_SKELETON_SKULL", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("SHIELD", CreativeCategory.COMBAT);
+
+        // Keep blaze spawn egg here (was in combat originally)
+        CATEGORY_MAP.put("BLAZE_SPAWN_EGG", CreativeCategory.COMBAT);
     }
 
     private static void registerDecorations() {
@@ -1201,6 +1195,22 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("NETHERITE_HOE", CreativeCategory.TOOLS);
         CATEGORY_MAP.put("NETHERITE_PICKAXE", CreativeCategory.TOOLS);
         CATEGORY_MAP.put("NETHERITE_SHOVEL", CreativeCategory.TOOLS);
+        CATEGORY_MAP.put("DIAMOND_AXE", CreativeCategory.TOOLS);
+        CATEGORY_MAP.put("DIAMOND_PICKAXE", CreativeCategory.TOOLS);
+        CATEGORY_MAP.put("DIAMOND_SHOVEL", CreativeCategory.TOOLS);
+        CATEGORY_MAP.put("DIAMOND_HOE", CreativeCategory.TOOLS);
+        CATEGORY_MAP.put("IRON_AXE", CreativeCategory.TOOLS);
+        CATEGORY_MAP.put("IRON_PICKAXE", CreativeCategory.TOOLS);
+        CATEGORY_MAP.put("IRON_SHOVEL", CreativeCategory.TOOLS);
+        CATEGORY_MAP.put("IRON_HOE", CreativeCategory.TOOLS);
+        CATEGORY_MAP.put("GOLDEN_AXE", CreativeCategory.TOOLS);
+        CATEGORY_MAP.put("GOLDEN_PICKAXE", CreativeCategory.TOOLS);
+        CATEGORY_MAP.put("GOLDEN_SHOVEL", CreativeCategory.TOOLS);
+        CATEGORY_MAP.put("GOLDEN_HOE", CreativeCategory.TOOLS);
+        CATEGORY_MAP.put("WOODEN_AXE", CreativeCategory.TOOLS);
+        CATEGORY_MAP.put("WOODEN_PICKAXE", CreativeCategory.TOOLS);
+        CATEGORY_MAP.put("WOODEN_SHOVEL", CreativeCategory.TOOLS);
+        CATEGORY_MAP.put("WOODEN_HOE", CreativeCategory.TOOLS);
     }
 
     private static void registerTransportation() {
@@ -1233,6 +1243,8 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("PALE_OAK_CHEST_BOAT", CreativeCategory.TRANSPORTATION);
         CATEGORY_MAP.put("SPRUCE_BOAT", CreativeCategory.TRANSPORTATION);
         CATEGORY_MAP.put("SPRUCE_CHEST_BOAT", CreativeCategory.TRANSPORTATION);
+        CATEGORY_MAP.put("CARROT_ON_A_STICK", CreativeCategory.TRANSPORTATION);
+
     }
 
     // Updated to accept string keys
