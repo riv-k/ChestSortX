@@ -130,8 +130,6 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("GHAST_TEAR", CreativeCategory.BREWING);
         CATEGORY_MAP.put("GOLDEN_CARROT", CreativeCategory.BREWING);
 
-        // Suggestion: items like EXPERIENCE_BOTTLE, HONEY_BOTTLE or SUSPICIOUS_STEW
-        // are not typical brewing ingredients and may be better placed in MISC or FOOD.
     }
 
     private static void registerBuildingBlocks() {
@@ -385,11 +383,6 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("SANDSTONE_SLAB", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("SANDSTONE_STAIRS", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("SANDSTONE_WALL", CreativeCategory.BUILDING_BLOCKS);
-        CATEGORY_MAP.put("SCULK", CreativeCategory.BUILDING_BLOCKS);
-        CATEGORY_MAP.put("SCULK_CATALYST", CreativeCategory.BUILDING_BLOCKS);
-        CATEGORY_MAP.put("SCULK_SENSOR", CreativeCategory.BUILDING_BLOCKS);
-        CATEGORY_MAP.put("SCULK_SHRIEKER", CreativeCategory.BUILDING_BLOCKS);
-        CATEGORY_MAP.put("SCULK_VEIN", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("SEA_LANTERN", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("SEA_PICKLE", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("SEAGRASS", CreativeCategory.BUILDING_BLOCKS);
@@ -431,12 +424,10 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("WARPED_FENCE_GATE", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("WARPED_NYLIUM", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("WARPED_PLANKS", CreativeCategory.BUILDING_BLOCKS);
-        CATEGORY_MAP.put("WARPED_PRESSURE_PLATE", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("WARPED_SLAB", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("WARPED_STAIRS", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("WARPED_TRAPDOOR", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("WARPED_WART_BLOCK", CreativeCategory.BUILDING_BLOCKS);
-        CATEGORY_MAP.put("WATER", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("WAXED_CHISELED_COPPER", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("WAXED_COPPER_BLOCK", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("WAXED_CUT_COPPER", CreativeCategory.BUILDING_BLOCKS);
@@ -818,7 +809,6 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("PUFFERFISH_BUCKET", CreativeCategory.FOOD);
         CATEGORY_MAP.put("SPIDER_EYE", CreativeCategory.FOOD);
         CATEGORY_MAP.put("SUGAR", CreativeCategory.FOOD);
-        // Items sometimes associated with brewing but are edible
         CATEGORY_MAP.put("HONEY_BOTTLE", CreativeCategory.FOOD);
         CATEGORY_MAP.put("SUSPICIOUS_STEW", CreativeCategory.FOOD);
     }
@@ -938,7 +928,6 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("ECHO_SHARD", CreativeCategory.MISC);
         CATEGORY_MAP.put("EMERALD", CreativeCategory.MISC);
         CATEGORY_MAP.put("DIAMOND", CreativeCategory.MISC);
-        // Bottles related to experience are not a brewing ingredient
         CATEGORY_MAP.put("EXPERIENCE_BOTTLE", CreativeCategory.MISC);
         CATEGORY_MAP.put("GOAT_HORN", CreativeCategory.MISC);
         CATEGORY_MAP.put("FILLED_MAP", CreativeCategory.MISC);
@@ -1113,6 +1102,7 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("NETHERITE_UPGRADE_SMITHING_TEMPLATE", CreativeCategory.MISC);
         CATEGORY_MAP.put("RED_DYE", CreativeCategory.MISC);
         CATEGORY_MAP.put("RABBIT_HIDE", CreativeCategory.MISC);
+        CATEGORY_MAP.put("WATER", CreativeCategory.MISC);
     }
 
     private static void registerRedstone() {
@@ -1121,6 +1111,11 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("BIRCH_BUTTON", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("BIRCH_PRESSURE_PLATE", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("CALIBRATED_SCULK_SENSOR", CreativeCategory.REDSTONE);
+        CATEGORY_MAP.put("SCULK", CreativeCategory.REDSTONE);
+        CATEGORY_MAP.put("SCULK_CATALYST", CreativeCategory.REDSTONE);
+        CATEGORY_MAP.put("SCULK_SENSOR", CreativeCategory.REDSTONE);
+        CATEGORY_MAP.put("SCULK_SHRIEKER", CreativeCategory.REDSTONE);
+        CATEGORY_MAP.put("SCULK_VEIN", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("CHAIN_COMMAND_BLOCK", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("COMPARATOR", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("CRIMSON_BUTTON", CreativeCategory.REDSTONE);
@@ -1167,6 +1162,7 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("TRIPWIRE_HOOK", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("TRAPPED_CHEST", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("OAK_BUTTON", CreativeCategory.REDSTONE);
+        CATEGORY_MAP.put("WARPED_PRESSURE_PLATE", CreativeCategory.REDSTONE);
     }
 
     private static void registerTools() {
