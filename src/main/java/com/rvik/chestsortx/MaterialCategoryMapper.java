@@ -100,22 +100,38 @@ public class MaterialCategoryMapper {
     }
 
     private static void registerBrewing() {
-        CATEGORY_MAP.put("EXPERIENCE_BOTTLE", CreativeCategory.BREWING);
-        CATEGORY_MAP.put("FERMENTED_SPIDER_EYE", CreativeCategory.BREWING);
-        CATEGORY_MAP.put("GHAST_TEAR", CreativeCategory.BREWING);
+        // Bottles & potion containers
         CATEGORY_MAP.put("GLASS_BOTTLE", CreativeCategory.BREWING);
-        CATEGORY_MAP.put("GLISTERING_MELON_SLICE", CreativeCategory.BREWING);
-        CATEGORY_MAP.put("HONEY_BOTTLE", CreativeCategory.BREWING);
-        CATEGORY_MAP.put("LINGERING_POTION", CreativeCategory.BREWING);
-        CATEGORY_MAP.put("MAGMA_CREAM", CreativeCategory.BREWING);
-        CATEGORY_MAP.put("OMINOUS_BOTTLE", CreativeCategory.BREWING);
-        CATEGORY_MAP.put("NETHER_WART", CreativeCategory.BREWING);
+        CATEGORY_MAP.put("WATER_BOTTLE", CreativeCategory.BREWING);
         CATEGORY_MAP.put("POTION", CreativeCategory.BREWING);
-        CATEGORY_MAP.put("LINGERING_POTION", CreativeCategory.BREWING);
         CATEGORY_MAP.put("SPLASH_POTION", CreativeCategory.BREWING);
-        CATEGORY_MAP.put("WATER_BUCKET", CreativeCategory.BREWING);
+        CATEGORY_MAP.put("LINGERING_POTION", CreativeCategory.BREWING);
+
+        // Brewing equipment / blocks commonly used with brewing
+        CATEGORY_MAP.put("BREWING_STAND", CreativeCategory.BREWING);
+        CATEGORY_MAP.put("CAULDRON", CreativeCategory.BREWING);
         CATEGORY_MAP.put("WATER_CAULDRON", CreativeCategory.BREWING);
-        CATEGORY_MAP.put("SUSPICIOUS_STEW", CreativeCategory.BREWING);
+        CATEGORY_MAP.put("WATER_BUCKET", CreativeCategory.BREWING);
+
+        // Core brewing ingredients and modifiers
+        CATEGORY_MAP.put("NETHER_WART", CreativeCategory.BREWING);
+        CATEGORY_MAP.put("BLAZE_POWDER", CreativeCategory.BREWING);
+        CATEGORY_MAP.put("GUNPOWDER", CreativeCategory.BREWING);
+        CATEGORY_MAP.put("DRAGON_BREATH", CreativeCategory.BREWING);
+        CATEGORY_MAP.put("REDSTONE", CreativeCategory.BREWING);
+        CATEGORY_MAP.put("GLOWSTONE_DUST", CreativeCategory.BREWING);
+
+        // Common potion ingredients
+        CATEGORY_MAP.put("FERMENTED_SPIDER_EYE", CreativeCategory.BREWING);
+        CATEGORY_MAP.put("SPIDER_EYE", CreativeCategory.BREWING);
+        CATEGORY_MAP.put("SUGAR", CreativeCategory.BREWING);
+        CATEGORY_MAP.put("GLISTERING_MELON_SLICE", CreativeCategory.BREWING);
+        CATEGORY_MAP.put("MAGMA_CREAM", CreativeCategory.BREWING);
+        CATEGORY_MAP.put("GHAST_TEAR", CreativeCategory.BREWING);
+        CATEGORY_MAP.put("GOLDEN_CARROT", CreativeCategory.BREWING);
+
+        // Suggestion: items like EXPERIENCE_BOTTLE, HONEY_BOTTLE or SUSPICIOUS_STEW
+        // are not typical brewing ingredients and may be better placed in MISC or FOOD.
     }
 
     private static void registerBuildingBlocks() {
@@ -802,6 +818,9 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("PUFFERFISH_BUCKET", CreativeCategory.FOOD);
         CATEGORY_MAP.put("SPIDER_EYE", CreativeCategory.FOOD);
         CATEGORY_MAP.put("SUGAR", CreativeCategory.FOOD);
+        // Items sometimes associated with brewing but are edible
+        CATEGORY_MAP.put("HONEY_BOTTLE", CreativeCategory.FOOD);
+        CATEGORY_MAP.put("SUSPICIOUS_STEW", CreativeCategory.FOOD);
     }
 
     private static void registerMisc() {
@@ -919,6 +938,8 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("ECHO_SHARD", CreativeCategory.MISC);
         CATEGORY_MAP.put("EMERALD", CreativeCategory.MISC);
         CATEGORY_MAP.put("DIAMOND", CreativeCategory.MISC);
+        // Bottles related to experience are not a brewing ingredient
+        CATEGORY_MAP.put("EXPERIENCE_BOTTLE", CreativeCategory.MISC);
         CATEGORY_MAP.put("GOAT_HORN", CreativeCategory.MISC);
         CATEGORY_MAP.put("FILLED_MAP", CreativeCategory.MISC);
         CATEGORY_MAP.put("GUSTER_BANNER_PATTERN", CreativeCategory.MISC);
