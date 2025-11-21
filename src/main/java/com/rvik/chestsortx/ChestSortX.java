@@ -1,5 +1,7 @@
 package com.rvik.chestsortx;
 
+import com.rvik.chestsortx.MaterialCategoryMapper;
+import com.rvik.chestsortx.MaterialCategoryMapper.CreativeCategory;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -15,7 +17,6 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.inventory.CreativeCategory;
 
 import net.kyori.adventure.text.Component;
 
@@ -51,6 +52,8 @@ public class ChestSortX extends JavaPlugin implements Listener {
     // null.
     ItemStack[] items = closedInventory.getContents();
 
+
+
     // Filter out null/air items and collect into a list
     List<ItemStack> validItems = new ArrayList<>();
     for (ItemStack item : items) {
@@ -59,18 +62,20 @@ public class ChestSortX extends JavaPlugin implements Listener {
       }
       validItems.add(item);
     }
-
     for (ItemStack item : validItems) {
-      Material material = item.getType();
-      event.getPlayer().sendMessage(Component.text(material.toString()));
-      String creativeCategory = material.getCreativeCategory().toString();
-      event.getPlayer().sendMessage(Component.text(creativeCategory));
-      event.getPlayer().sendMessage(Component.text("---"));
-      if (categoryMap.containsKey(creativeCategory)) {
-        categoryMap.get(creativeCategory).add(item);
-      } else {
-        categoryMap.get("MISC").add(item);
-      }
+      Material mat = item.getType();
+
+      // Look up the category in your mapper
+      CreativeCategory category = MaterialCategoryMapper.getCategory(mat);
+
+      // Fallback if null
+      String categoryName = category != null ? category.toString() : "MISC";
+
+      // Add to your categoryMap
+      categoryMap.getOrDefault(categoryName, categoryMap.get("MISC")).add(item);
+
+      // Debug
+      event.getPlayer().sendMessage(Component.text(mat + " -> " + categoryName));
     }
 
     // Clear the inventory before re-adding items
