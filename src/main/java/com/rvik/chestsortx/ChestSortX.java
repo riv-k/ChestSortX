@@ -81,6 +81,8 @@ public class ChestSortX extends JavaPlugin implements Listener {
       event.getPlayer().sendMessage(Component.text(matName + " -> " + categoryName));
     }
 
+    // TODO : Sort items within each category 
+
     // Clear the inventory before re-adding items
     closedInventory.clear();
 
