@@ -32,7 +32,7 @@ public class ChestSortX extends JavaPlugin implements Listener {
 
   @EventHandler
   public void onPlayerJoin(PlayerJoinEvent event) {
-    event.getPlayer().sendMessage(Component.text("Hello, " + event.getPlayer().getName() + "!"));
+    event.getPlayer().sendMessage(Component.text("Hello, " + event.getPlayer().getName() + "! This plugin - ChestSortX - is still under development. :P"));
   }
 
   @EventHandler
@@ -51,8 +51,6 @@ public class ChestSortX extends JavaPlugin implements Listener {
     // null.
     ItemStack[] items = closedInventory.getContents();
 
-
-
     // Filter out null/air items and collect into a list
     List<ItemStack> validItems = new ArrayList<>();
     for (ItemStack item : items) {
@@ -62,7 +60,9 @@ public class ChestSortX extends JavaPlugin implements Listener {
       validItems.add(item);
     }
 
+    // TODO :Compress items (stack similar items together)
 
+    // Categorize items
     for (ItemStack item : validItems) {
       Material mat = item.getType();
       String matName = mat.toString().toUpperCase();
@@ -77,10 +77,10 @@ public class ChestSortX extends JavaPlugin implements Listener {
       categoryMap.getOrDefault(categoryName, categoryMap.get("MISC")).add(item);
 
       // Debug
-      event.getPlayer().sendMessage(Component.text(matName + " -> " + categoryName));
+      // event.getPlayer().sendMessage(Component.text(matName + " -> " + categoryName));
     }
 
-    // TODO : Sort items within each category 
+    // Sort items within each category alphabetically by material name
     for (String category : CATEGORY_ORDER) {
       List<ItemStack> itemList = categoryMap.get(category);
       itemList.sort((item1, item2) -> {
