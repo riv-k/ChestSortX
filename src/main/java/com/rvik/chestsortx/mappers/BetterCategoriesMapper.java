@@ -1,7 +1,8 @@
 package com.rvik.chestsortx.mappers;
 
 import org.bukkit.Material;
-import java.util.EnumMap;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Mapper for Minecraft Materials to enhanced creative-style categories.
@@ -164,7 +165,7 @@ public class BetterCategoriesMapper {
         UNOBTAINABLE
     }
 
-    private static final EnumMap<Material, CreativeCategory> CATEGORY_MAP = new EnumMap<>(Material.class);
+    private static final Map<String, CreativeCategory> CATEGORY_MAP = new HashMap<>();
 
     public static void init() {
         registerBuildingBlocks();
@@ -235,6 +236,7 @@ public class BetterCategoriesMapper {
     // ─────────────────────────────────────────────────────────────
 
     public static CreativeCategory getCategory(Material material) {
-        return CATEGORY_MAP.getOrDefault(material, CreativeCategory.MISC);
+        String key = material.name().toString(); // "COBBLESTONE"
+        return CATEGORY_MAP.getOrDefault(key, CreativeCategory.MISC);
     }
 }
