@@ -118,7 +118,6 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("BLAZE_POWDER", CreativeCategory.BREWING);
         CATEGORY_MAP.put("GUNPOWDER", CreativeCategory.BREWING);
         CATEGORY_MAP.put("DRAGON_BREATH", CreativeCategory.BREWING);
-        CATEGORY_MAP.put("REDSTONE", CreativeCategory.BREWING);
         CATEGORY_MAP.put("GLOWSTONE_DUST", CreativeCategory.BREWING);
 
         // Common potion ingredients
@@ -131,7 +130,6 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("GOLDEN_CARROT", CreativeCategory.BREWING);
 
         CATEGORY_MAP.put("BLAZE_ROD", CreativeCategory.BREWING);
-        CATEGORY_MAP.put("DRAGON_BREATH", CreativeCategory.BREWING);
 
     }
 
@@ -409,7 +407,6 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("STONE_BRICK_SLAB", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("STONE_BRICK_STAIRS", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("STONE_BRICK_WALL", CreativeCategory.BUILDING_BLOCKS);
-        CATEGORY_MAP.put("SLIME_BLOCK", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("STRUCTURE_BLOCK", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("TERRACOTTA", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("TUFF", CreativeCategory.BUILDING_BLOCKS);
@@ -896,7 +893,6 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("ROTTEN_FLESH", CreativeCategory.FOOD);
         CATEGORY_MAP.put("SALMON", CreativeCategory.FOOD);
         CATEGORY_MAP.put("SALMON_BUCKET", CreativeCategory.FOOD);
-        CATEGORY_MAP.put("SUGAR", CreativeCategory.FOOD);
         CATEGORY_MAP.put("SUGAR_CANE", CreativeCategory.FOOD);
         CATEGORY_MAP.put("SWEET_BERRIES", CreativeCategory.FOOD);
         CATEGORY_MAP.put("TADPOLE_BUCKET", CreativeCategory.FOOD);
@@ -905,8 +901,6 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("WHEAT_SEEDS", CreativeCategory.FOOD);
         CATEGORY_MAP.put("PUFFERFISH", CreativeCategory.FOOD);
         CATEGORY_MAP.put("PUFFERFISH_BUCKET", CreativeCategory.FOOD);
-        CATEGORY_MAP.put("SPIDER_EYE", CreativeCategory.FOOD);
-        CATEGORY_MAP.put("SUGAR", CreativeCategory.FOOD);
         CATEGORY_MAP.put("HONEY_BOTTLE", CreativeCategory.FOOD);
         CATEGORY_MAP.put("SUSPICIOUS_STEW", CreativeCategory.FOOD);
         CATEGORY_MAP.put("CANDLE_CAKE", CreativeCategory.FOOD);
@@ -1173,7 +1167,6 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("FURNACE", CreativeCategory.TOOLS);
         CATEGORY_MAP.put("FURNACE_MINECART", CreativeCategory.TOOLS);
         CATEGORY_MAP.put("GRINDSTONE", CreativeCategory.TOOLS);
-        CATEGORY_MAP.put("FLINT_AND_STEEL", CreativeCategory.TOOLS);
         CATEGORY_MAP.put("LOOM", CreativeCategory.TOOLS);
         CATEGORY_MAP.put("SHEARS", CreativeCategory.TOOLS);
         CATEGORY_MAP.put("STONE_AXE", CreativeCategory.TOOLS);
@@ -1229,10 +1222,6 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("MINECART", CreativeCategory.TRANSPORTATION);
         CATEGORY_MAP.put("MANGROVE_BOAT", CreativeCategory.TRANSPORTATION);
         CATEGORY_MAP.put("MANGROVE_CHEST_BOAT", CreativeCategory.TRANSPORTATION);
-        CATEGORY_MAP.put("JUNGLE_BOAT", CreativeCategory.TRANSPORTATION);
-        CATEGORY_MAP.put("JUNGLE_CHEST_BOAT", CreativeCategory.TRANSPORTATION);
-        CATEGORY_MAP.put("DARK_OAK_BOAT", CreativeCategory.TRANSPORTATION);
-        CATEGORY_MAP.put("DARK_OAK_CHEST_BOAT", CreativeCategory.TRANSPORTATION);
         CATEGORY_MAP.put("OAK_BOAT", CreativeCategory.TRANSPORTATION);
         CATEGORY_MAP.put("OAK_CHEST_BOAT", CreativeCategory.TRANSPORTATION);
         CATEGORY_MAP.put("PALE_OAK_BOAT", CreativeCategory.TRANSPORTATION);
