@@ -571,6 +571,12 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("WAXED_WEATHERED_CUT_COPPER_SLAB", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("WAXED_WEATHERED_CUT_COPPER_STAIRS", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("WAXED_WEATHERED_LIGHTNING_ROD", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("SCULK", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("SCULK_CATALYST", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("SCULK_SHRIEKER", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("SCULK_VEIN", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("LADDER", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("SCAFFOLDING", CreativeCategory.BUILDING_BLOCKS);
     }
 
     private static void registerCombat() {
@@ -1096,6 +1102,8 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("MAGENTA_BUNDLE", CreativeCategory.MISC);
         CATEGORY_MAP.put("ORANGE_BUNDLE", CreativeCategory.MISC);
         CATEGORY_MAP.put("RED_BUNDLE", CreativeCategory.MISC);
+        CATEGORY_MAP.put("CHAIN_COMMAND_BLOCK", CreativeCategory.MISC);
+        CATEGORY_MAP.put("REPEATING_COMMAND_BLOCK", CreativeCategory.MISC);
     }
 
     private static void registerRedstone() {
@@ -1104,23 +1112,15 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("BIRCH_BUTTON", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("BIRCH_PRESSURE_PLATE", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("CALIBRATED_SCULK_SENSOR", CreativeCategory.REDSTONE);
-        CATEGORY_MAP.put("SCULK", CreativeCategory.REDSTONE);
-        CATEGORY_MAP.put("SCULK_CATALYST", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("SCULK_SENSOR", CreativeCategory.REDSTONE);
-        CATEGORY_MAP.put("SCULK_SHRIEKER", CreativeCategory.REDSTONE);
-        CATEGORY_MAP.put("SCULK_VEIN", CreativeCategory.REDSTONE);
-        CATEGORY_MAP.put("CHAIN_COMMAND_BLOCK", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("COMPARATOR", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("CRIMSON_BUTTON", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("CHERRY_BUTTON", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("CHERRY_PRESSURE_PLATE", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("DAYLIGHT_DETECTOR", CreativeCategory.REDSTONE);
-        CATEGORY_MAP.put("DETECTOR_RAIL", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("HEAVY_WEIGHTED_PRESSURE_PLATE", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("HOPPER", CreativeCategory.REDSTONE);
-        CATEGORY_MAP.put("HOPPER_MINECART", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("JUNGLE_PRESSURE_PLATE", CreativeCategory.REDSTONE);
-        CATEGORY_MAP.put("LADDER", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("LEVER", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("LIGHT_WEIGHTED_PRESSURE_PLATE", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("LIGHTNING_ROD", CreativeCategory.REDSTONE);
@@ -1133,8 +1133,6 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("PALE_OAK_PRESSURE_PLATE", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("PISTON", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("PISTON_HEAD", CreativeCategory.REDSTONE);
-        CATEGORY_MAP.put("POWERED_RAIL", CreativeCategory.REDSTONE);
-        CATEGORY_MAP.put("RAIL", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("REDSTONE", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("REDSTONE_BLOCK", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("REDSTONE_LAMP", CreativeCategory.REDSTONE);
@@ -1143,14 +1141,11 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("REDSTONE_WALL_TORCH", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("REDSTONE_WIRE", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("REPEATER", CreativeCategory.REDSTONE);
-        CATEGORY_MAP.put("REPEATING_COMMAND_BLOCK", CreativeCategory.REDSTONE);
-        CATEGORY_MAP.put("SCAFFOLDING", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("STONE_BUTTON", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("STONE_PRESSURE_PLATE", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("STICKY_PISTON", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("TARGET", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("TNT", CreativeCategory.REDSTONE);
-        CATEGORY_MAP.put("TNT_MINECART", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("TRIPWIRE", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("TRIPWIRE_HOOK", CreativeCategory.REDSTONE);
         CATEGORY_MAP.put("TRAPPED_CHEST", CreativeCategory.REDSTONE);
@@ -1245,6 +1240,13 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("SPRUCE_BOAT", CreativeCategory.TRANSPORTATION);
         CATEGORY_MAP.put("SPRUCE_CHEST_BOAT", CreativeCategory.TRANSPORTATION);
         CATEGORY_MAP.put("CARROT_ON_A_STICK", CreativeCategory.TRANSPORTATION);
+
+        // Rails and minecart variants belong to transportation (used for movement systems)
+        CATEGORY_MAP.put("DETECTOR_RAIL", CreativeCategory.TRANSPORTATION);
+        CATEGORY_MAP.put("POWERED_RAIL", CreativeCategory.TRANSPORTATION);
+        CATEGORY_MAP.put("RAIL", CreativeCategory.TRANSPORTATION);
+        CATEGORY_MAP.put("HOPPER_MINECART", CreativeCategory.TRANSPORTATION);
+        CATEGORY_MAP.put("TNT_MINECART", CreativeCategory.TRANSPORTATION);
 
     }
 
