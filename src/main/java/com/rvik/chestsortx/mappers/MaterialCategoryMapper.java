@@ -1,4 +1,4 @@
-package com.rvik.chestsortx;
+package com.rvik.chestsortx.mappers;
 
 import java.util.HashMap;
 import java.util.Map;

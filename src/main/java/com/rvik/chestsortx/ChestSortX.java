@@ -1,7 +1,5 @@
 package com.rvik.chestsortx;
 
-import com.rvik.chestsortx.MaterialCategoryMapper;
-import com.rvik.chestsortx.MaterialCategoryMapper.CreativeCategory;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -17,6 +15,9 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import com.rvik.chestsortx.mappers.MaterialCategoryMapper;
+import com.rvik.chestsortx.mappers.MaterialCategoryMapper.CreativeCategory;
 
 import net.kyori.adventure.text.Component;
 

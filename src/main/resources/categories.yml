@@ -1,0 +1,181 @@
+categories:
+  BUILDING_BLOCKS:
+    name: "Building Blocks"
+    description: |
+      Blocks used primarily for construction and architecture.
+
+      Includes:
+        - All wood variants (logs, planks, stripped logs, stems, hyphae)
+        - Wood decoration items (doors, trapdoors, fences, slabs, stairs)
+        - Stone, cobblestone, brick types
+        - Sandstone, terracotta
+        - Glass & panes
+        - Concrete & concrete powder
+        - Clay, hardened clay
+        - Wool (non-colored decorations)
+        - Basalt, blackstone, deepslate
+        - Purpur blocks
+        - Prismarine blocks
+
+      Notes:
+        - Represents blocks players build with
+        - # Note: Wood logs, planks, stripped logs, stems, hyphae → go in BUILDING_BLOCKS, not NATURAL_BLOCKS
+
+  COLORED_BLOCKS:
+    name: "Colored Blocks"
+    description: |
+      Any block whose variants are organized by color.
+
+      Includes:
+        - Wool, carpet, bed, concrete, concrete powder
+        - Terracotta, stained glass & panes
+        - Banners, candles
+        # Removed shulker boxes (now in FUNCTIONAL_BLOCKS)
+
+  NATURAL_BLOCKS:
+    name: "Natural Blocks"
+    description: |
+      Anything that generates in the world naturally or is a plant/crop.
+
+      Includes:
+        - Dirt, grass, sand, gravel
+        - Leaves, saplings
+        - Flowers, mushrooms
+        - Sugar cane, bamboo, cactus, mangrove roots
+        - Ice, packed ice, snow
+        - Coral, sea pickles
+        - All crops (wheat, carrots, potatoes)
+        - Seeds (wheat, melon, beetroot)
+        - Apples, sticks, other natural drops
+        - Spore blossom, hanging roots
+        - Moss, vines
+        - Natural stones (tuff, dripstone)
+
+  FUNCTIONAL_BLOCKS:
+    name: "Functional Blocks"
+    description: |
+      Blocks with an inventory or special functionality.
+
+      Includes:
+        - Crafting table, furnaces (normal, blast, smoker)
+        - Smithing table, grindstone, loom, cartography table
+        - Stonecutter, fletching table
+        - Enchanting table, brewing stand, cauldron
+        - Anvil, composter, barrels
+        - Chests (normal, trapped)
+        - Shulker boxes (all colors)
+        - Ender chest, jukebox, lectern, beacon
+        - Campfires, hopper, dropper, dispenser
+        - Bell, respawn anchor, lodestone
+
+      Notes:
+        - Special storage: includes all shulker box colors and ender chest
+
+  REDSTONE:
+    name: "Redstone"
+    description: |
+      Components used for redstone circuits and contraptions.
+
+      Includes:
+        - Redstone dust, repeaters, comparators
+        - Pistons, sticky pistons, redstone lamps, note blocks, observers
+        - Buttons (stone, wood), levers, pressure plates
+        - Daylight detector, target block, sculk sensors
+        - Tripwire hook, TNT, rails, activator rails, detector rails
+
+  TOOLS_AND_UTILITIES:
+    name: "Tools & Utilities"
+    description: |
+      Tools the player holds that aren't weapons.
+
+      Includes:
+        - Pickaxes, axes, shovels, hoes
+        - Shears, flint & steel, fishing rod, compass, clock
+        - Bucket variants, spyglass, brush, name tag, lead
+        - Maps (empty/filled)
+
+      Notes:
+        - Movement-related items like boats, minecarts, elytra, saddles → TRANSPORTATION
+        - Shields → COMBAT
+
+  COMBAT:
+    name: "Combat"
+    description: |
+      Weapons, armor, and combat gear.
+
+      Includes:
+        - Swords, bows, crossbows, tridents, shields
+        - All armor pieces, arrows & tipped arrows, fire charges
+        - Totem of Undying, armor trims
+
+      Notes:
+        - Combat-related enchanted books optional; general enchanted books → MISC
+
+  FOOD_AND_DRINK:
+    name: "Food & Drink"
+    description: |
+      Consumable food & drink items.
+
+      Includes:
+        - All edible foods, milk buckets, honey bottles, suspicious stews
+        - Golden apples, bread, cookies, cake
+        - Raw & cooked meats, beetroot soup
+
+  INGREDIENTS:
+    name: "Ingredients"
+    description: |
+      Items used to craft other items or potion ingredients.
+
+      Includes:
+        - Gunpowder, blaze powder, ghast tear, nether wart
+        - Magma cream, slimeballs, feathers, leather, string
+        - Dyes, ink sacs, bones, bone meal, potions & potion bottles
+        - Rabbit hide, echo shards
+        - Optional: combat-related enchanted books
+
+  ORES:
+    name: "Ores & Raw Materials"
+    description: |
+      Raw and refined ores found in the world.
+
+      Includes:
+        - Raw iron, raw gold, raw copper
+        - Iron ingot, gold ingot, netherite scrap
+        - Coal, diamonds, emeralds, lapis lazuli
+        - Nether quartz, nether gold ore, ancient debris
+        - Netherite ingot
+
+  SPAWN_EGGS:
+    name: "Spawn Eggs"
+    description: "Every spawn egg. Nothing else goes here."
+
+  TRANSPORTATION:
+    name: "Transportation"
+    description: |
+      Vehicles or movement-related equipment.
+
+      Includes:
+        - All boats, all minecarts, rails, elytra
+        - Saddle, carrot on a stick, warped fungus on a stick
+
+  MISC:
+    name: "Miscellaneous"
+    description: |
+      Everything that doesn't fit anywhere else.
+
+      Includes:
+        - Music discs, banner patterns, player heads
+        - Written books, knowledge books
+        - Heart of the sea, dragon's breath
+        - Any odd items that have no functional group
+
+  UNOBTAINABLE:
+    name: "Unobtainable / Admin Only"
+    description: |
+      Items impossible to legitimately obtain.
+
+      Includes:
+        - Bedrock, barrier, command blocks, structure block & void
+        - Light block, debug stick, end portal frame
+        - Border block, jigsaw block, trial spawner
+        - Brushable archaeology blocks
