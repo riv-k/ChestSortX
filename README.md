@@ -30,3 +30,12 @@ Anywyas, I've decided to go and add more definition to categories / add more cat
 Oh right, the whole point of this plugin is that most addons need players to write "/autosort" or run other commands in chat for them to sort items, or for players to Shift + Click the chest + double tap the invenroty - but my thinking is, if people download a plugin such as this THEY WANT IT TO BE ALWAYS ACTIVE! So my plugin is just going to listen to Inventory slots being closed -> and then it sorts the items, easy as. Oh another thing, main focus was to make this mobile friendly, cause double tapping on inventory slots to sort item doesn't really render for mobile, and the only addon that worked great didn't sort item for a double chest :')
 
 Ok yap session done, I needa lock in!!
+
+
+Resources:
+   - minecraft_items.csv - v useful :  https://docs.google.com/spreadsheets/d/1QTsnLFqjG1YQ0siEPl4shL7jXKkWCYl3Hoo9YcvfL5k/edit?gid=1386834576#gid=1386834576 
+   - How to create a PaperMC plugin : https://docs.papermc.io/paper/dev/project-setup/ 
+   - Documentation : https://jd.papermc.io/paper/1.21.10/org/bukkit/event/Listener.html  
+
+Thanks:
+@Jack-Haddad for helping me get started, showing me how to use FileZilla, and how to THUNK better lel
