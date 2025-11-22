@@ -130,6 +130,9 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("GHAST_TEAR", CreativeCategory.BREWING);
         CATEGORY_MAP.put("GOLDEN_CARROT", CreativeCategory.BREWING);
 
+        CATEGORY_MAP.put("BLAZE_ROD", CreativeCategory.BREWING);
+        CATEGORY_MAP.put("DRAGON_BREATH", CreativeCategory.BREWING);
+
     }
 
     private static void registerBuildingBlocks() {
@@ -490,7 +493,84 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("RED_TERRACOTTA", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("WARPED_HYPHAE", CreativeCategory.BUILDING_BLOCKS);
         CATEGORY_MAP.put("WARPED_STEM", CreativeCategory.BUILDING_BLOCKS);
-
+        CATEGORY_MAP.put("COPPER_BARS", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("COPPER_CHEST", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("COPPER_CHAIN", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("COPPER_DOOR", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("COPPER_ORE", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("CRIMSON_DOOR", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("CRIMSON_HYPHAE", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("CRIMSON_NYLIUM", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("CRIMSON_STEM", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("CRYING_OBSIDIAN", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("ENCHANTING_TABLE", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("ENDER_CHEST", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("EXPOSED_COPPER_BARS", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("EXPOSED_COPPER_BULB", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("EXPOSED_COPPER_CHAIN", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("EXPOSED_COPPER_CHEST", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("EXPOSED_COPPER_DOOR", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("EXPOSED_COPPER_GOLEM_STATUE", CreativeCategory.DECORATIONS);
+        CATEGORY_MAP.put("EXPOSED_COPPER_GRATE", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("EXPOSED_COPPER_LANTERN", CreativeCategory.DECORATIONS);
+        CATEGORY_MAP.put("EXPOSED_COPPER_TRAPDOOR", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("EXPOSED_LIGHTNING_ROD", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("GLOW_LICHEN", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("GRAY_CONCRETE", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("GRAY_CONCRETE_POWDER", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("GRAY_GLAZED_TERRACOTTA", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("GRAY_STAINED_GLASS", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("GRAY_STAINED_GLASS_PANE", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("GRAY_TERRACOTTA", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("GRAY_WOOL", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("GREEN_CONCRETE", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("GREEN_CONCRETE_POWDER", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("GREEN_GLAZED_TERRACOTTA", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("GREEN_STAINED_GLASS", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("GREEN_STAINED_GLASS_PANE", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("GREEN_TERRACOTTA", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("GREEN_WOOL", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("IRON_CHAIN", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("LODESTONE", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WARPED_BUTTON", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_COPPER_BARS", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_COPPER_BULB", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_COPPER_CHAIN", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_COPPER_CHEST", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_COPPER_DOOR", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_COPPER_GRATE", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_COPPER_TRAPDOOR", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_EXPOSED_COPPER_BARS", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_EXPOSED_COPPER_BULB", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_EXPOSED_COPPER_CHAIN", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_EXPOSED_COPPER_CHEST", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_EXPOSED_COPPER_DOOR", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_EXPOSED_COPPER_GRATE", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_EXPOSED_COPPER_TRAPDOOR", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_EXPOSED_CUT_COPPER_SLAB", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_EXPOSED_CUT_COPPER_STAIRS", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_EXPOSED_LIGHTNING_ROD", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_LIGHTNING_ROD", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_OXIDIZED_COPPER_BARS", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_OXIDIZED_COPPER_BULB", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_OXIDIZED_COPPER_CHAIN", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_OXIDIZED_COPPER_CHEST", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_OXIDIZED_COPPER_DOOR", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_OXIDIZED_COPPER_GRATE", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_OXIDIZED_COPPER_TRAPDOOR", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_OXIDIZED_CUT_COPPER_SLAB", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_OXIDIZED_CUT_COPPER_STAIRS", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_OXIDIZED_LIGHTNING_ROD", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_WEATHERED_COPPER_BARS", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_WEATHERED_COPPER_BULB", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_WEATHERED_COPPER_CHAIN", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_WEATHERED_COPPER_CHEST", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_WEATHERED_COPPER_DOOR", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_WEATHERED_COPPER_GRATE", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_WEATHERED_COPPER_TRAPDOOR", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_WEATHERED_CUT_COPPER_SLAB", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_WEATHERED_CUT_COPPER_STAIRS", CreativeCategory.BUILDING_BLOCKS);
+        CATEGORY_MAP.put("WAXED_WEATHERED_LIGHTNING_ROD", CreativeCategory.BUILDING_BLOCKS);
     }
 
     private static void registerCombat() {
@@ -554,6 +634,15 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("BLUE_HARNESS", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("BROWN_HARNESS", CreativeCategory.COMBAT);
         CATEGORY_MAP.put("RED_HARNESS", CreativeCategory.COMBAT);
+
+        CATEGORY_MAP.put("COPPER_CHESTPLATE", CreativeCategory.COMBAT);
+
+        CATEGORY_MAP.put("COPPER_HELMET", CreativeCategory.COMBAT);
+        CATEGORY_MAP.put("COPPER_HORSE_ARMOR", CreativeCategory.COMBAT);
+        CATEGORY_MAP.put("COPPER_LEGGINGS", CreativeCategory.COMBAT);
+        CATEGORY_MAP.put("TIPPED_ARROW", CreativeCategory.COMBAT);
+        CATEGORY_MAP.put("WOLF_ARMOR", CreativeCategory.COMBAT);
+
     }
 
     private static void registerDecorations() {
@@ -742,7 +831,26 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("WITHER_ROSE", CreativeCategory.DECORATIONS);
         CATEGORY_MAP.put("SWEET_BERRY_BUSH", CreativeCategory.DECORATIONS);
         CATEGORY_MAP.put("NETHER_SPROUTS", CreativeCategory.DECORATIONS);
-
+        CATEGORY_MAP.put("COPPER_LANTERN", CreativeCategory.DECORATIONS);
+        CATEGORY_MAP.put("CRIMSON_FUNGUS", CreativeCategory.DECORATIONS);
+        CATEGORY_MAP.put("CRIMSON_ROOTS", CreativeCategory.DECORATIONS);
+        CATEGORY_MAP.put("DRAGON_EGG", CreativeCategory.DECORATIONS);
+        CATEGORY_MAP.put("DRAGON_HEAD", CreativeCategory.DECORATIONS);
+        CATEGORY_MAP.put("DRAGON_WALL_HEAD", CreativeCategory.DECORATIONS);
+        CATEGORY_MAP.put("END_ROD", CreativeCategory.DECORATIONS);
+        CATEGORY_MAP.put("GLOW_ITEM_FRAME", CreativeCategory.DECORATIONS);
+        CATEGORY_MAP.put("GRAY_SHULKER_BOX", CreativeCategory.DECORATIONS);
+        CATEGORY_MAP.put("GRAY_WALL_BANNER", CreativeCategory.DECORATIONS);
+        CATEGORY_MAP.put("GREEN_SHULKER_BOX", CreativeCategory.DECORATIONS);
+        CATEGORY_MAP.put("GREEN_WALL_BANNER", CreativeCategory.DECORATIONS);
+        CATEGORY_MAP.put("WAXED_COPPER_GOLEM_STATUE", CreativeCategory.DECORATIONS);
+        CATEGORY_MAP.put("WAXED_COPPER_LANTERN", CreativeCategory.DECORATIONS);
+        CATEGORY_MAP.put("WAXED_EXPOSED_COPPER_GOLEM_STATUE", CreativeCategory.DECORATIONS);
+        CATEGORY_MAP.put("WAXED_EXPOSED_COPPER_LANTERN", CreativeCategory.DECORATIONS);
+        CATEGORY_MAP.put("WAXED_OXIDIZED_COPPER_GOLEM_STATUE", CreativeCategory.DECORATIONS);
+        CATEGORY_MAP.put("WAXED_OXIDIZED_COPPER_LANTERN", CreativeCategory.DECORATIONS);
+        CATEGORY_MAP.put("WAXED_WEATHERED_COPPER_GOLEM_STATUE", CreativeCategory.DECORATIONS);
+        CATEGORY_MAP.put("WAXED_WEATHERED_COPPER_LANTERN", CreativeCategory.DECORATIONS);
     }
 
     private static void registerFood() {
@@ -804,6 +912,16 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("RED_CANDLE_CAKE", CreativeCategory.FOOD);
         CATEGORY_MAP.put("BLACK_CANDLE_CAKE", CreativeCategory.FOOD);
         CATEGORY_MAP.put("BLUE_CANDLE_CAKE", CreativeCategory.FOOD);
+        CATEGORY_MAP.put("COOKED_BEEF", CreativeCategory.FOOD);
+        CATEGORY_MAP.put("COOKED_CHICKEN", CreativeCategory.FOOD);
+        CATEGORY_MAP.put("COOKED_COD", CreativeCategory.FOOD);
+        CATEGORY_MAP.put("COOKED_MUTTON", CreativeCategory.FOOD);
+        CATEGORY_MAP.put("COOKED_PORKCHOP", CreativeCategory.FOOD);
+        CATEGORY_MAP.put("COOKED_RABBIT", CreativeCategory.FOOD);
+        CATEGORY_MAP.put("COOKED_SALMON", CreativeCategory.FOOD);
+        CATEGORY_MAP.put("COOKIE", CreativeCategory.FOOD);
+        CATEGORY_MAP.put("ENCHANTED_GOLDEN_APPLE", CreativeCategory.FOOD);
+
     }
 
     private static void registerMisc() {
@@ -823,8 +941,6 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("BOOK", CreativeCategory.MISC);
         CATEGORY_MAP.put("BOOKSHELF", CreativeCategory.MISC);
         CATEGORY_MAP.put("BORDURE_INDENTED_BANNER_PATTERN", CreativeCategory.MISC);
-        CATEGORY_MAP.put("BLAZE_POWDER", CreativeCategory.MISC);
-        CATEGORY_MAP.put("BLAZE_ROD", CreativeCategory.MISC);
         CATEGORY_MAP.put("BREEZE_ROD", CreativeCategory.MISC);
         CATEGORY_MAP.put("BREEZE_SPAWN_EGG", CreativeCategory.MISC);
         CATEGORY_MAP.put("BREWER_POTTERY_SHERD", CreativeCategory.MISC);
@@ -845,68 +961,25 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("CONDUIT", CreativeCategory.MISC);
         CATEGORY_MAP.put("COD_BUCKET", CreativeCategory.MISC);
         CATEGORY_MAP.put("COD_SPAWN_EGG", CreativeCategory.MISC);
-        CATEGORY_MAP.put("COOKED_BEEF", CreativeCategory.MISC);
-        CATEGORY_MAP.put("COOKED_CHICKEN", CreativeCategory.MISC);
-        CATEGORY_MAP.put("COOKED_COD", CreativeCategory.MISC);
-        CATEGORY_MAP.put("COOKED_MUTTON", CreativeCategory.MISC);
-        CATEGORY_MAP.put("COOKED_PORKCHOP", CreativeCategory.MISC);
-        CATEGORY_MAP.put("COOKED_RABBIT", CreativeCategory.MISC);
-        CATEGORY_MAP.put("COOKED_SALMON", CreativeCategory.MISC);
-        CATEGORY_MAP.put("COOKIE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("COPPER_BARS", CreativeCategory.MISC);
-        CATEGORY_MAP.put("COPPER_CHEST", CreativeCategory.MISC);
-        CATEGORY_MAP.put("COPPER_CHAIN", CreativeCategory.MISC);
-        CATEGORY_MAP.put("COPPER_CHESTPLATE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("COPPER_DOOR", CreativeCategory.MISC);
         CATEGORY_MAP.put("COPPER_GOLEM_SPAWN_EGG", CreativeCategory.MISC);
         CATEGORY_MAP.put("COPPER_GOLEM_STATUE", CreativeCategory.MISC);
         CATEGORY_MAP.put("COPPER_GRATE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("COPPER_HELMET", CreativeCategory.MISC);
-        CATEGORY_MAP.put("COPPER_HORSE_ARMOR", CreativeCategory.MISC);
         CATEGORY_MAP.put("COPPER_INGOT", CreativeCategory.MISC);
-        CATEGORY_MAP.put("COPPER_LANTERN", CreativeCategory.MISC);
-        CATEGORY_MAP.put("COPPER_LEGGINGS", CreativeCategory.MISC);
         CATEGORY_MAP.put("COPPER_NUGGET", CreativeCategory.MISC);
-        CATEGORY_MAP.put("COPPER_ORE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("CRIMSON_DOOR", CreativeCategory.MISC);
-        CATEGORY_MAP.put("CRIMSON_FUNGUS", CreativeCategory.MISC);
-        CATEGORY_MAP.put("CRIMSON_HYPHAE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("CRIMSON_NYLIUM", CreativeCategory.MISC);
-        CATEGORY_MAP.put("CRIMSON_ROOTS", CreativeCategory.MISC);
-        CATEGORY_MAP.put("CRIMSON_STEM", CreativeCategory.MISC);
-        CATEGORY_MAP.put("CRYING_OBSIDIAN", CreativeCategory.MISC);
         CATEGORY_MAP.put("DANGER_POTTERY_SHERD", CreativeCategory.MISC);
         CATEGORY_MAP.put("DIAMOND", CreativeCategory.MISC);
         CATEGORY_MAP.put("DISC_FRAGMENT_5", CreativeCategory.MISC);
         CATEGORY_MAP.put("DOLPHIN_SPAWN_EGG", CreativeCategory.MISC);
         CATEGORY_MAP.put("DONKEY_SPAWN_EGG", CreativeCategory.MISC);
-        CATEGORY_MAP.put("DRAGON_BREATH", CreativeCategory.MISC);
-        CATEGORY_MAP.put("DRAGON_EGG", CreativeCategory.MISC);
-        CATEGORY_MAP.put("DRAGON_HEAD", CreativeCategory.MISC);
-        CATEGORY_MAP.put("DRAGON_WALL_HEAD", CreativeCategory.MISC);
         CATEGORY_MAP.put("DRIED_GHAST", CreativeCategory.MISC);
         CATEGORY_MAP.put("DUNE_ARMOR_TRIM_SMITHING_TEMPLATE", CreativeCategory.MISC);
         CATEGORY_MAP.put("EMERALD", CreativeCategory.MISC);
         CATEGORY_MAP.put("ENCHANTED_BOOK", CreativeCategory.MISC);
-        CATEGORY_MAP.put("ENCHANTED_GOLDEN_APPLE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("ENCHANTING_TABLE", CreativeCategory.MISC);
         CATEGORY_MAP.put("END_CRYSTAL", CreativeCategory.MISC);
         CATEGORY_MAP.put("END_GATEWAY", CreativeCategory.MISC);
         CATEGORY_MAP.put("END_PORTAL", CreativeCategory.MISC);
         CATEGORY_MAP.put("END_PORTAL_FRAME", CreativeCategory.MISC);
-        CATEGORY_MAP.put("END_ROD", CreativeCategory.MISC);
-        CATEGORY_MAP.put("ENDER_CHEST", CreativeCategory.MISC);
         CATEGORY_MAP.put("ENDER_EYE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("EXPOSED_COPPER_BARS", CreativeCategory.MISC);
-        CATEGORY_MAP.put("EXPOSED_COPPER_BULB", CreativeCategory.MISC);
-        CATEGORY_MAP.put("EXPOSED_COPPER_CHAIN", CreativeCategory.MISC);
-        CATEGORY_MAP.put("EXPOSED_COPPER_CHEST", CreativeCategory.MISC);
-        CATEGORY_MAP.put("EXPOSED_COPPER_DOOR", CreativeCategory.MISC);
-        CATEGORY_MAP.put("EXPOSED_COPPER_GOLEM_STATUE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("EXPOSED_COPPER_GRATE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("EXPOSED_COPPER_LANTERN", CreativeCategory.MISC);
-        CATEGORY_MAP.put("EXPOSED_COPPER_TRAPDOOR", CreativeCategory.MISC);
-        CATEGORY_MAP.put("EXPOSED_LIGHTNING_ROD", CreativeCategory.MISC);
         CATEGORY_MAP.put("EYE_ARMOR_TRIM_SMITHING_TEMPLATE", CreativeCategory.MISC);
         CATEGORY_MAP.put("FIELD_MASONED_BANNER_PATTERN", CreativeCategory.MISC);
         CATEGORY_MAP.put("FLETCHING_TABLE", CreativeCategory.MISC);
@@ -916,11 +989,7 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("FLOWER_BANNER_PATTERN", CreativeCategory.MISC);
         CATEGORY_MAP.put("FRIEND_POTTERY_SHERD", CreativeCategory.MISC);
         CATEGORY_MAP.put("GLOW_INK_SAC", CreativeCategory.MISC);
-        CATEGORY_MAP.put("GLOW_ITEM_FRAME", CreativeCategory.MISC);
-        CATEGORY_MAP.put("GLOW_LICHEN", CreativeCategory.MISC);
         CATEGORY_MAP.put("ECHO_SHARD", CreativeCategory.MISC);
-        CATEGORY_MAP.put("EMERALD", CreativeCategory.MISC);
-        CATEGORY_MAP.put("DIAMOND", CreativeCategory.MISC);
         CATEGORY_MAP.put("EXPERIENCE_BOTTLE", CreativeCategory.MISC);
         CATEGORY_MAP.put("GOAT_HORN", CreativeCategory.MISC);
         CATEGORY_MAP.put("FILLED_MAP", CreativeCategory.MISC);
@@ -931,36 +1000,15 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("HEARTBREAK_POTTERY_SHERD", CreativeCategory.MISC);
         CATEGORY_MAP.put("HOST_ARMOR_TRIM_SMITHING_TEMPLATE", CreativeCategory.MISC);
         CATEGORY_MAP.put("HOWL_POTTERY_SHERD", CreativeCategory.MISC);
-        CATEGORY_MAP.put("GRAY_CONCRETE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("GRAY_CONCRETE_POWDER", CreativeCategory.MISC);
         CATEGORY_MAP.put("GRAY_DYE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("GRAY_GLAZED_TERRACOTTA", CreativeCategory.MISC);
         CATEGORY_MAP.put("GRAY_HARNESS", CreativeCategory.MISC);
-        CATEGORY_MAP.put("GRAY_SHULKER_BOX", CreativeCategory.MISC);
-        CATEGORY_MAP.put("GRAY_STAINED_GLASS", CreativeCategory.MISC);
-        CATEGORY_MAP.put("GRAY_STAINED_GLASS_PANE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("GRAY_TERRACOTTA", CreativeCategory.MISC);
-        CATEGORY_MAP.put("GRAY_WALL_BANNER", CreativeCategory.MISC);
-        CATEGORY_MAP.put("GRAY_WOOL", CreativeCategory.MISC);
-        CATEGORY_MAP.put("GREEN_CONCRETE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("GREEN_CONCRETE_POWDER", CreativeCategory.MISC);
         CATEGORY_MAP.put("GREEN_DYE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("GREEN_GLAZED_TERRACOTTA", CreativeCategory.MISC);
         CATEGORY_MAP.put("GREEN_HARNESS", CreativeCategory.MISC);
-        CATEGORY_MAP.put("GREEN_SHULKER_BOX", CreativeCategory.MISC);
-        CATEGORY_MAP.put("GREEN_STAINED_GLASS", CreativeCategory.MISC);
-        CATEGORY_MAP.put("GREEN_STAINED_GLASS_PANE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("GREEN_TERRACOTTA", CreativeCategory.MISC);
-        CATEGORY_MAP.put("GREEN_WALL_BANNER", CreativeCategory.MISC);
-        CATEGORY_MAP.put("GREEN_WOOL", CreativeCategory.MISC);
-        CATEGORY_MAP.put("IRON_CHAIN", CreativeCategory.MISC);
         CATEGORY_MAP.put("IRON_INGOT", CreativeCategory.MISC);
         CATEGORY_MAP.put("IRON_NUGGET", CreativeCategory.MISC);
         CATEGORY_MAP.put("KNOWLEDGE_BOOK", CreativeCategory.MISC);
         CATEGORY_MAP.put("LAPIS_LAZULI", CreativeCategory.MISC);
         CATEGORY_MAP.put("LARGE_AMETHYST_BUD", CreativeCategory.MISC);
-        CATEGORY_MAP.put("LEAD", CreativeCategory.MISC);
-        CATEGORY_MAP.put("LODESTONE", CreativeCategory.MISC);
         CATEGORY_MAP.put("MAP", CreativeCategory.MISC);
         CATEGORY_MAP.put("MEDIUM_AMETHYST_BUD", CreativeCategory.MISC);
         CATEGORY_MAP.put("MINER_POTTERY_SHERD", CreativeCategory.MISC);
@@ -1016,7 +1064,6 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("SUSPICIOUS_GRAVEL", CreativeCategory.MISC);
         CATEGORY_MAP.put("SUSPICIOUS_SAND", CreativeCategory.MISC);
         CATEGORY_MAP.put("TADPOLE_SPAWN_EGG", CreativeCategory.MISC);
-        CATEGORY_MAP.put("TIPPED_ARROW", CreativeCategory.MISC);
         CATEGORY_MAP.put("TRADER_LLAMA_SPAWN_EGG", CreativeCategory.MISC);
         CATEGORY_MAP.put("TRIAL_KEY", CreativeCategory.MISC);
         CATEGORY_MAP.put("TRIAL_SPAWNER", CreativeCategory.MISC);
@@ -1029,56 +1076,7 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("WANDERING_TRADER_SPAWN_EGG", CreativeCategory.MISC);
         CATEGORY_MAP.put("WARD_ARMOR_TRIM_SMITHING_TEMPLATE", CreativeCategory.MISC);
         CATEGORY_MAP.put("WARDEN_SPAWN_EGG", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WARPED_BUTTON", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WARPED_FUNGUS_ON_A_STICK", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_COPPER_BARS", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_COPPER_BULB", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_COPPER_CHAIN", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_COPPER_CHEST", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_COPPER_DOOR", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_COPPER_GOLEM_STATUE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_COPPER_GRATE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_COPPER_LANTERN", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_COPPER_TRAPDOOR", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_EXPOSED_COPPER_BARS", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_EXPOSED_COPPER_BULB", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_EXPOSED_COPPER_CHAIN", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_EXPOSED_COPPER_CHEST", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_EXPOSED_COPPER_DOOR", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_EXPOSED_COPPER_GOLEM_STATUE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_EXPOSED_COPPER_GRATE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_EXPOSED_COPPER_LANTERN", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_EXPOSED_COPPER_TRAPDOOR", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_EXPOSED_CUT_COPPER_SLAB", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_EXPOSED_CUT_COPPER_STAIRS", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_EXPOSED_LIGHTNING_ROD", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_LIGHTNING_ROD", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_OXIDIZED_COPPER_BARS", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_OXIDIZED_COPPER_BULB", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_OXIDIZED_COPPER_CHAIN", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_OXIDIZED_COPPER_CHEST", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_OXIDIZED_COPPER_DOOR", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_OXIDIZED_COPPER_GOLEM_STATUE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_OXIDIZED_COPPER_GRATE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_OXIDIZED_COPPER_LANTERN", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_OXIDIZED_COPPER_TRAPDOOR", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_OXIDIZED_CUT_COPPER_SLAB", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_OXIDIZED_CUT_COPPER_STAIRS", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_OXIDIZED_LIGHTNING_ROD", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_WEATHERED_COPPER_BARS", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_WEATHERED_COPPER_BULB", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_WEATHERED_COPPER_CHAIN", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_WEATHERED_COPPER_CHEST", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_WEATHERED_COPPER_DOOR", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_WEATHERED_COPPER_GOLEM_STATUE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_WEATHERED_COPPER_GRATE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_WEATHERED_COPPER_LANTERN", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_WEATHERED_COPPER_TRAPDOOR", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_WEATHERED_CUT_COPPER_SLAB", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_WEATHERED_CUT_COPPER_STAIRS", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WAXED_WEATHERED_LIGHTNING_ROD", CreativeCategory.MISC);
         CATEGORY_MAP.put("WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("WOLF_ARMOR", CreativeCategory.MISC);
         CATEGORY_MAP.put("WITCH_SPAWN_EGG", CreativeCategory.MISC);
         CATEGORY_MAP.put("WOLF_SPAWN_EGG", CreativeCategory.MISC);
         CATEGORY_MAP.put("ZOGLIN_SPAWN_EGG", CreativeCategory.MISC);
@@ -1094,7 +1092,6 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("NETHERITE_SCRAP", CreativeCategory.MISC);
         CATEGORY_MAP.put("NETHERITE_UPGRADE_SMITHING_TEMPLATE", CreativeCategory.MISC);
         CATEGORY_MAP.put("RED_DYE", CreativeCategory.MISC);
-        CATEGORY_MAP.put("RABBIT_HIDE", CreativeCategory.MISC);
         CATEGORY_MAP.put("WATER", CreativeCategory.MISC);
         CATEGORY_MAP.put("MAGENTA_BUNDLE", CreativeCategory.MISC);
         CATEGORY_MAP.put("ORANGE_BUNDLE", CreativeCategory.MISC);
@@ -1213,6 +1210,8 @@ public class MaterialCategoryMapper {
         CATEGORY_MAP.put("WOODEN_PICKAXE", CreativeCategory.TOOLS);
         CATEGORY_MAP.put("WOODEN_SHOVEL", CreativeCategory.TOOLS);
         CATEGORY_MAP.put("WOODEN_HOE", CreativeCategory.TOOLS);
+        CATEGORY_MAP.put("LEAD", CreativeCategory.TOOLS);
+        CATEGORY_MAP.put("WARPED_FUNGUS_ON_A_STICK", CreativeCategory.TOOLS);
     }
 
     private static void registerTransportation() {
