@@ -24,7 +24,7 @@ import net.kyori.adventure.text.Component;
 public class ChestSortX extends JavaPlugin implements Listener {
 
   private static final List<String> CATEGORY_ORDER = Arrays.asList(
-      "FOOD", "TOOLS", "COMBAT", "BUILDING_BLOCKS", "DECORATIONS", "REDSTONE", "BREWING", "TRANSPORTATION",  "MISC");
+      "FOOD", "TOOLS", "COMBAT", "BUILDING_BLOCKS", "DECORATIONS", "REDSTONE", "BREWING", "TRANSPORTATION", "MISC");
 
   @Override
   public void onEnable() {
@@ -33,7 +33,8 @@ public class ChestSortX extends JavaPlugin implements Listener {
 
   @EventHandler
   public void onPlayerJoin(PlayerJoinEvent event) {
-    event.getPlayer().sendMessage(Component.text("Hello, " + event.getPlayer().getName() + "! This plugin - ChestSortX - is still under development. :P"));
+    event.getPlayer().sendMessage(Component
+        .text("Hello, " + event.getPlayer().getName() + "! This plugin - ChestSortX - is still under development. :P"));
   }
 
   @EventHandler
@@ -78,7 +79,7 @@ public class ChestSortX extends JavaPlugin implements Listener {
       categoryMap.getOrDefault(categoryName, categoryMap.get("MISC")).add(item);
 
       // Debug
-      // event.getPlayer().sendMessage(Component.text(matName + " -> " + categoryName));
+      event.getPlayer().sendMessage(Component.text(mat + "-> " + matName + " -> " + categoryName));
     }
 
     // Sort items within each category alphabetically by material name
