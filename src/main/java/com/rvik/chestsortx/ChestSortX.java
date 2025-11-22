@@ -81,6 +81,14 @@ public class ChestSortX extends JavaPlugin implements Listener {
     }
 
     // TODO : Sort items within each category 
+    for (String category : CATEGORY_ORDER) {
+      List<ItemStack> itemList = categoryMap.get(category);
+      itemList.sort((item1, item2) -> {
+        String name1 = item1.getType().toString();
+        String name2 = item2.getType().toString();
+        return name1.compareTo(name2);
+      });
+    }
 
     // Clear the inventory before re-adding items
     closedInventory.clear();
